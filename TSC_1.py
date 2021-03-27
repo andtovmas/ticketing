@@ -25,13 +25,13 @@ class Verify_Events(unittest.TestCase):
         logBtn = driver.find_element_by_css_selector(
             ".login_btn[type='submit']").click()
 
-        time.sleep(5)
+        driver.implicitly_wait(5)
 
         # select brand
 
         brnd = driver.find_element_by_id(
             'labelFilterBrand').send_keys('Payment Methods', Keys.ENTER)
-        time.sleep(5)
+        driver.implicitly_wait(5)
 
         # Verify that there are 5 events displayed and all events are attached to the  (Brand name: Payment Methods)
 
