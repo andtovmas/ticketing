@@ -38,7 +38,13 @@ class Verify_Events(unittest.TestCase):
         links = driver.find_elements_by_xpath(
             "//a[contains(.,'Payment Methods')]")
 
-        print("The", len(links), " events are attached to the Payment Methods")
+        if links:
+
+            print("The", len(links), " events are attached to the Payment Methods")
+
+        else:
+
+            print("Failed to find 5 events associated with the brand payment methods")
 
     def tearDown(self):
 
