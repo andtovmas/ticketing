@@ -44,7 +44,7 @@ class Verify_Events(unittest.TestCase):
 
         else:
 
-            print("Failed to find 5 events associated with the brand payment methods")
+            print("Failed to find 5 events associated with the brand: Payment Methods")
 
     def tearDown(self):
 
